@@ -18,6 +18,7 @@ request.onerror = function (e) {
 };
 
 request.onsuccess = function (e) {
+    // fetch api bulk functionality
     db = request.result;
     tx = db.transaction(budgetStore, "readwrite");
     store = tx.objectStore(budgetStore);
