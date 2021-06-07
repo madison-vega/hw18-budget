@@ -21,7 +21,7 @@ mongoose.connect("mongodb://localhost/budget", {
 });
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
+  process.env.MONGODB_URI || 'mongodb://localhost/budget_db',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
